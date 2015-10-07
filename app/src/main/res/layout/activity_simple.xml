@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.keith.miniframework.widget.FocusFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:keith="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    keith:focusDrawable="@drawable/ytm_common_focus">
+
+    <com.keith.miniframework.widget.ScreenPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        keith:scrollDuration="300" />
+
+</com.keith.miniframework.widget.FocusFrameLayout>
