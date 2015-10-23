@@ -13,7 +13,7 @@ public class ScreenHelper {
         if (sScreens == null) {
             sScreens = new ArrayList<>();
             Map<Integer, Screen> screenMap = new HashMap<>();
-            List<Slot> slots = SlotHelper.createSlots(1920, 1080, 0, 0);
+            List<Slot> slots = SlotHelper.createSlots(1080, 720, 0, 0);
             for (Slot slot : slots) {
                 int id = slot.getSid();
                 Screen screen = screenMap.get(id);

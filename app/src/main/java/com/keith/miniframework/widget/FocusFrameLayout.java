@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
+import android.view.FocusFinder;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.AnticipateOvershootInterpolator;
@@ -96,7 +97,6 @@ public class FocusFrameLayout extends FrameLayout {
                         rect.bottom = rect.top;
                         mFocusDrawable.setBounds(rect);
                     }
-
 
                     if (newFocus instanceof Movable) {
                         Movable movable = (Movable) newFocus;
@@ -197,7 +197,7 @@ public class FocusFrameLayout extends FrameLayout {
                     case MSG_ANIM:
                         View view = (View) msg.obj;
                         Rect rect = ViewHelper.getBounds(view);
-                        layout.anim(30, rect);
+                        layout.anim(24, rect);
                         break;
                     default:
                         break;

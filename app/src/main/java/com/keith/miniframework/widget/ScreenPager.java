@@ -73,7 +73,7 @@ public class ScreenPager extends ViewPager implements Movable {
 
     private class ScreenScroller extends Scroller {
 
-        private static final int DEFAULT_DURATION = 1000;
+        private static final int DEFAULT_DURATION = 5000;
 
         private int mDuration = DEFAULT_DURATION;
 
